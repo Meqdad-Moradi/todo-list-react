@@ -172,7 +172,16 @@ a {
          background-color: rgba(0, 0, 0, 0.042);
          margin-bottom: 0.5em;
          border-left: 3px solid $main;
-         cursor: pointer;
+
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         .trash {
+            cursor: pointer;
+            color: #ff3232;
+            padding: 0 .5em;
+         }
       }
    }
 }
