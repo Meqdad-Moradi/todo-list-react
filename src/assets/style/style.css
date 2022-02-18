@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::first-letter {
+  text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+picture {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.5em 1.7em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: 0.5em;
+  background-color: #01ead1;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #3c4145;
+  color: #fff;
+  -webkit-box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042);
+          box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042);
+}
+
+.btn:active {
+  background-color: #000000;
+}
+
+.container {
+  max-width: 600px;
+  width: 80%;
+  height: auto;
+  padding: 2em;
+  margin: 3em auto;
+}
+
+.list-info {
+  margin-top: 2em;
+  color: #ff3232;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  line-height: normal;
+  position: relative;
+  color: #3c4145;
+}
+
+.header h1::after {
+  content: "";
+  height: 3px;
+  width: 1.5em;
+  background-color: #01ead1;
+  position: absolute;
+  inset: auto auto -0.3em 0;
+  border-radius: 50px;
+}
+
+.todo-form-box {
+  margin-top: 3em;
+  border: 1px solid #e6e6e6;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+
+.todo-form-box .todo-form {
+  width: 100%;
+}
+
+.todo-form-box .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.todo-form-box .form-control label {
+  font-size: 1rem;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.todo-form-box .form-control input {
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-form-box .form-control input:focus, .todo-form-box .form-control input:hover {
+  border-color: #01ead1;
+  outline-color: #01ead1;
+}
+
+.todo-form-box .form-control small {
+  color: #ff3232;
+}
+
+.todo-form-box .submit-btn {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.todos {
+  margin-top: 3em;
+}
+
+.todos .todo-list li {
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.042);
+  margin-bottom: 0.5em;
+  border-left: 3px solid #01ead1;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
